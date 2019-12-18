@@ -10,7 +10,7 @@ class Login extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-
+    // Creating Circular Widget for profile logo.
     final loginLogo = CircleAvatar(
 
       backgroundColor: Colors.transparent,
@@ -18,8 +18,9 @@ class Login extends StatelessWidget{
       child: appLogo,
     );
 
+    // Creating Text widget for showing pin text.
     final pinText = Text('PIN',textAlign: TextAlign.left,style: TextStyle(color: Colors.white),);
-
+    // Creating Text Form Field widget for entering PIN.
     final pinCode = TextFormField(
 
       keyboardType: TextInputType.number,
@@ -36,7 +37,7 @@ class Login extends StatelessWidget{
       style: TextStyle(color: Colors.white),
 
     );
-
+    // Creating Padding widget for including login button widget.
     final loginButton = Padding(
 
     padding: EdgeInsets.symmetric(vertical: 16.0),
@@ -74,11 +75,12 @@ class Login extends StatelessWidget{
       borderRadius: BorderRadius.circular(24)
     ),));
 
+// Creating Text Widget for showing forgot password text.
     final forgotPwdText = Text(
       'Forgot Password?',
       style: TextStyle(color: Colors.white,fontSize: 15.0,),
       textAlign: TextAlign.center,);
-
+// Creating Text widget for showing Text Widget for showing Sign Up
     final signUpText = Text(
       'Sign Up',style: TextStyle(color: Colors.white),
       textAlign: TextAlign.right,
@@ -116,7 +118,7 @@ class Login extends StatelessWidget{
 
       backgroundColor: Colors.black,
       body: Center(
-
+ // Adding all widgets created to a list view widget for displaying.
         child: ListView(
 
           shrinkWrap: true,
